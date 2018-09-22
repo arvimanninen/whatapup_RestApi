@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using whatapup_RestApi.Models;
 
 namespace whatapup_RestApi.Migrations
 {
     [DbContext(typeof(WhatapupDbContext))]
-    partial class WhatapupDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180922161423_ItemCompletedRemoved")]
+    partial class ItemCompletedRemoved
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

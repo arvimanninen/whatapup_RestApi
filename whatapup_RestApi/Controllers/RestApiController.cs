@@ -12,19 +12,26 @@ namespace whatapup_RestApi.Controllers
     [ApiController]
     public class RestApiController : ControllerBase
     {
-        private readonly WhatapupDbContext _context;
+        private readonly WhatapupDbContext _db;
 
-        public RestApiController(WhatapupDbContext context)
+        public RestApiController(WhatapupDbContext db)
         {
-            _context = context;
+            _db = db;
         }
-        // public async Task<IActionResult> GetCategory([FromRoute] int id)
-        public async Task<IActionResult> GetCategoryData()
+        public IActionResult GetAllItems()
         {
-            var rawCategor
+            var rawItemDtos = from item in _db.Items
+                          select new ItemDTO
+                          {
+                              CategoryName = item.Category.Name,
+                              ItemName = item.Name,
+                          };
+            var itemDtos = rawItemDtos.ToList();
+            if(itemDtos.Count >= 1)
+            {
+                return Ok(itemDtos);
+            }
+            return NotFound();
         }
-
-
-
     }
 }

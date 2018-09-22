@@ -7,7 +7,7 @@ namespace whatapup_RestApi.Models
 {
     public class ItemDTO
     {
-        public string Name { get; set; }
-        public bool Completed { get; set; }
+        public string CategoryName { get; set; }
+        public string ItemName { get; set; }
     }
 }

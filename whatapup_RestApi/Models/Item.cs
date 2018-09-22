@@ -12,8 +12,6 @@ namespace whatapup_RestApi.Models
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
-        [Required]
-        public bool Completed { get; set; }
         public virtual Category Category { get; set; }
     }
 }
