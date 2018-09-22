@@ -1,0 +1,8 @@
+C:\GittiRepot\whatapup_restapi\whatapup_RestApi\bin\Debug\netcoreapp2.0\whatapup_RestApi.deps.json
+C:\GittiRepot\whatapup_restapi\whatapup_RestApi\bin\Debug\netcoreapp2.0\whatapup_RestApi.runtimeconfig.json
+C:\GittiRepot\whatapup_restapi\whatapup_RestApi\bin\Debug\netcoreapp2.0\whatapup_RestApi.runtimeconfig.dev.json
+C:\GittiRepot\whatapup_restapi\whatapup_RestApi\bin\Debug\netcoreapp2.0\whatapup_RestApi.dll
+C:\GittiRepot\whatapup_restapi\whatapup_RestApi\obj\Debug\netcoreapp2.0\whatapup_RestApi.csprojAssemblyReference.cache
+C:\GittiRepot\whatapup_restapi\whatapup_RestApi\obj\Debug\netcoreapp2.0\whatapup_RestApi.csproj.CoreCompileInputs.cache
+C:\GittiRepot\whatapup_restapi\whatapup_RestApi\obj\Debug\netcoreapp2.0\whatapup_RestApi.AssemblyInfoInputs.cache
+C:\GittiRepot\whatapup_restapi\whatapup_RestApi\obj\Debug\netcoreapp2.0\whatapup_RestApi.AssemblyInfo.cs
