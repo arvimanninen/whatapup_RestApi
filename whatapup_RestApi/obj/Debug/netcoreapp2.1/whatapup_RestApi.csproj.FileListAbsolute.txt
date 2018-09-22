@@ -9,3 +9,6 @@ C:\gittirepot\whatapup_RestApi\whatapup_RestApi\obj\Debug\netcoreapp2.1\whatapup
 C:\gittirepot\whatapup_RestApi\whatapup_RestApi\obj\Debug\netcoreapp2.1\whatapup_RestApi.AssemblyInfoInputs.cache
 C:\gittirepot\whatapup_RestApi\whatapup_RestApi\obj\Debug\netcoreapp2.1\whatapup_RestApi.AssemblyInfo.cs
 C:\gittirepot\whatapup_RestApi\whatapup_RestApi\obj\Debug\netcoreapp2.1\whatapup_RestApi.RazorTargetAssemblyInfo.cache
+C:\GittiRepot\whatapup_RestApi\whatapup_RestApi\bin\Debug\netcoreapp2.1\whatapup_RestApi.pdb
+C:\GittiRepot\whatapup_RestApi\whatapup_RestApi\obj\Debug\netcoreapp2.1\whatapup_RestApi.dll
+C:\GittiRepot\whatapup_RestApi\whatapup_RestApi\obj\Debug\netcoreapp2.1\whatapup_RestApi.pdb

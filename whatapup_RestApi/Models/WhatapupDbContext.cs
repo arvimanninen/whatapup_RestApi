@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace whatapup_RestApi.Models
 {
-    public class WhatapupDbContext :DbContext
+    public class WhatapupDbContext : DbContext
     {
         public WhatapupDbContext(DbContextOptions<WhatapupDbContext> options)
             : base(options)
