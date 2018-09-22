@@ -1,18 +1,17 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace whatapup_RestApi.Models
 {
-    public class RestApiContext : DbContext
+    public class WhatapupDbContext :DbContext
     {
-        public RestApiContext(DbContextOptions<RestApiContext> options) 
+        public WhatapupDbContext(DbContextOptions<WhatapupDbContext> options)
             : base(options)
         { }
         public DbSet<Item> Items { get; set; }
         public DbSet<Category> Categories { get; set; }
     }
 }
-
