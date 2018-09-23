@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using whatapup_RestApi.Models;
 
 namespace whatapup_RestApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class RestApiController : ControllerBase
     {
@@ -18,20 +19,29 @@ namespace whatapup_RestApi.Controllers
         {
             _db = db;
         }
-        public IActionResult GetAllItems()
+
+        [EnableCors("RestApiPolicy")]
+        [HttpGet]
+        public ActionResult Get()
         {
             var rawItemDtos = from item in _db.Items
+                              orderby item.Category.Name ascending
                           select new ItemDTO
                           {
                               CategoryName = item.Category.Name,
                               ItemName = item.Name,
                           };
             var itemDtos = rawItemDtos.ToList();
-            if(itemDtos.Count >= 1)
+            if(itemDtos.Count == 0)
             {
-                return Ok(itemDtos);
+                ItemDTO mock = new ItemDTO
+                {
+                    CategoryName = "Mock category",
+                    ItemName = "Mock item"
+                };
+                itemDtos.Add(mock);
             }
-            return NotFound();
+            return Ok(itemDtos);
         }
     }
 }
