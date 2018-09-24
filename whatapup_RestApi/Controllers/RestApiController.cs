@@ -34,12 +34,12 @@ namespace whatapup_RestApi.Controllers
             var itemDtos = rawItemDtos.ToList();
             if(itemDtos.Count == 0)
             {
-                ItemDTO mock = new ItemDTO
+                ItemDTO errorItemDto = new ItemDTO
                 {
-                    CategoryName = "Mock category",
-                    ItemName = "Mock item"
+                    CategoryName = "No categories found!",
+                    ItemName = "No items found!"
                 };
-                itemDtos.Add(mock);
+                itemDtos.Add(errorItemDto);
             }
             return Ok(itemDtos);
         }
