@@ -36,8 +36,8 @@ namespace whatapup_RestApi.Controllers
             {
                 ItemDTO errorItemDto = new ItemDTO
                 {
-                    CategoryName = "No categories found!",
-                    ItemName = "No items found!"
+                    CategoryName = "Error! No categories found!",
+                    ItemName = "Error! No items found!"
                 };
                 itemDtos.Add(errorItemDto);
             }
